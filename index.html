@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Horário</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Banner de Permissão de Cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+      <p>Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com o uso de cookies.</p>
+      <button id="accept-cookies">Aceitar</button>
+      <button id="decline-cookies">Recusar</button>
+  </div>
+  <header>
+      <figure>
+          <img src="img/logo.jpg" alt="logo">
+      </figure>
+      <h1>Barber shop</h1>
+  </header>
+  <button class="botao-flutuante"><a href="#ver-carrinho">Ver Carrinho</a></button>
+  <main class="store">
+      <h2>Estilo de corte</h2>
+      <div id="products-list">
+          <!-- Produtos serão carregados aqui dinamicamente -->
+      </div>
+  </main>
+<div>
+
+  <form id="form-agendamento">
+    <input type="text" name="nomeCliente" placeholder="Seu nome">
+    <input type="text" name="tipoServico" placeholder="Tipo do serviço" readonly>
+    <input type="date" name="data">
+    <input type="time" name="hora">
+    <select name="pagamento">
+      <option value="">Selecione o pagamento</option>
+      <option value="PIX">PIX</option>
+      <option value="Cartão">Cartão</option>
+      <option value="Dinheiro">Dinheiro</option>
+    </select>
+    <button type="submit">Agendar</button>
+  </form>
+</div>
+  <h4>Agendamentos</h4>
+  <ul id="lista-agendamentos"></ul>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p></p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>📍 Endereço: Rua das Hortaliças, 123 - Ubá</p>
+            <p>📞 Telefone: (11) 99999-9999</p>
+            <p>✉️ E-mail: contato@hortifrut.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <a href="#">🌿 Instagram</a> |
+            <a href="#">📘 Facebook</a> |
+            <a href="#">📲 WhatsApp</a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Hortifruti - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
